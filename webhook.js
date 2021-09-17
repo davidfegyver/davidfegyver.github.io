@@ -3,7 +3,7 @@ document.getElementById("send").onclick = (e) => {
     const email = document.getElementById("email").value
     //Ne hackelj meg kérlek :))
 
-    fetch('https://discord.com/api/webhooks/780886497926447115/4aDkiJQ5tiJ-o4uuUgs-8-EfzOhlgUkT3jus0G0jJXZzmBtVGuNWQ_RFf2WlKAQ4kceK', {
+    fetch('https://discord.com/api/webhooks/888355320802463834/5zkKo0fn8iY4Ezwl4xm99YSdfwN2B0lDwaSCfZWxjMVa5WAlTVBb6p4ntUkg3jGJ8ZMW', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
