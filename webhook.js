@@ -1,7 +1,7 @@
 document.getElementById("send").onclick = (e) => {
     const message = document.getElementById("message").value
     const email = document.getElementById("email").value
-    //Ne hackelj meg kérlek :))
+    //Please Dont hack me :) 
 
     fetch('https://discord.com/api/webhooks/888355320802463834/5zkKo0fn8iY4Ezwl4xm99YSdfwN2B0lDwaSCfZWxjMVa5WAlTVBb6p4ntUkg3jGJ8ZMW', {
             method: 'POST',

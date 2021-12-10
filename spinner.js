@@ -4,8 +4,7 @@ console.log("You can find it here: https://github.com/davidfegyver/davidfegyver.
 console.log("Please give me a star if you like it :D ")
 const spinner = document.getElementById("data-spinner")
 const datalist = [
-  'Programmer', 'Backend developer', 'Bug Bounty hunter', 'Doing server stuff', 'Nodejs is the best :D',
-  'Pokemon Go player', 'C3 competition winner',
+  'Programmer', 'Backend dev', 'BountyHunter', 'I <3 JS', 'Pokemon Go player', 'C^3 winner'
 ]
 headeranim(datalist, spinner)
 
