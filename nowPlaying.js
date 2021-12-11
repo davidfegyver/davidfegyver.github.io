@@ -13,13 +13,13 @@ function checkListening() {
 
     fetch(`${lastfmData.baseURL}${lastfmData.user}&api_key=${lastfmData.api_key}&format=json&limit=1`)
         .then(response => response.json())
-        .then(resp=>{
+        .then(resp => {
             playinge.innerText = resp.recenttracks.track.length == 1 ? "Last listened song on Spotify:" : "I am listening on Spotify to"
             const recentTrack = resp.recenttracks.track[0];
             artiste.innerText = recentTrack.artist["#text"];
-            tracke.innerText=recentTrack.name;
+            tracke.innerText = recentTrack.name;
 
-            urle.href=recentTrack.url;
+            urle.href = recentTrack.url;
         });
 
 }

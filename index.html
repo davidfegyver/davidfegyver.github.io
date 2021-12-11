@@ -6,7 +6,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-210296591-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-210296591-1');
@@ -28,11 +31,8 @@
 
 
   <meta content="David Fegyver" property="og:title">
-  <meta content="The website of a young programmer :D " property="og:description">
+  <meta content="The website of a young programmer :D" property="og:description">
   <meta content="http://davidfegyver.github.io" property="og:url">
-  <meta
-    content="https://cdn0.iconfinder.com/data/icons/artificial-intelligence-butterscotch-vol-2/256/Reinforcement_Learning-512.png"
-    property="og:image">
   <meta content="#8080ff" data-react-helmet="true" name="theme-color">
 
   <link href="./style.css" rel="stylesheet">
@@ -57,16 +57,18 @@
     <div class="container">
       <div class="row d-flex">
         <div class="col-md-6">
-          <img src="./me.jpg" class="img-fluid"></img>
+          <img src="./me.jpg" class="img-fluid mb-5" id="me"></img>
+          <button type="button" class="btn btn-secondary mb-3" onclick="toggleCVMode()">Toggle CV Mode</button>
+          <p class="cv" style="display: none">Now you can see the "Experiences", "Experiences" and "Educations" tab</p>
         </div>
         <div class="col-md-6 wrap">
           <div class="p-5">
 
             <h2 class="mb-5">Hi! I'm David</h2>
 
-            <p>I’m 15 from Hungary. I've been around computers since I was little and I've been coding for 4+ years now. I love
-              thinking about new ideas and turning them into big projects. I am interested in
-              Machine Learning, Data visualization, Backend development, Hacking and Arduino</p>
+            <p>I'm 15yo, from Hungary. I've been around computers since I was little and I've been coding for 4+ years
+              now. I like thinking about projects that could somehow change the world :) I am interested in
+              machine learning, data visualization, backend development, hacking and Arduino</p>
 
             <div class="mb-3" style="font-family: monospace;">
               <h5 class="mb-1" id="playing"></h5>
@@ -119,16 +121,15 @@
           <ul class="item-list list-unstyled mb-0 px-3">
             <li class="mb-5">
               <h3 class="mb-0">Facebook-breachchecker</h3>
-              <div class="text-justify"> A nodejs+sqlite+express application where you can check if Facebook leaked your
-                mobile number </div>
+              <div class="text-justify"> Facebook had a data leak/scraping recently, that leaked over 533million
+                accounts informations. I made a web app to check if you were in that breach</div>
               <div class="text-muted">
-                <a href="https://github.com/davidfegyver/fb-breachchecker" target="_blank">Source</a> /
-                <a href="http://davidfegyver.v4y.hu" target="_blank">LIVE VERSION (Not always active, sorry)</a> /
+                Not yet open source /
                 #express, #node, #facebook, #hacked, #better-sqlite3</div>
             </li>
             <li class="mb-5">
               <h3 class="mb-0">Maskimum</h3>
-              <div class="text-justify"> Well this is a face-mask detection system </div>
+              <div class="text-justify"> A face-mask detection system, made for C^3 2020 </div>
               <div class="text-muted">
                 <a href="https://github.com/davidfegyver/szabadfogasu-maszk" target="_blank">Source</a> /
                 <a href="https://www.youtube.com/watch?v=eLyNWEL1Los" target="_blank">Demo video</a> /
@@ -143,10 +144,32 @@
                 #bootstrap #css #static #website </div>
             </li>
             <li class="mb-5">
+              <h3 class="mb-0">PaperPiano</h3>
+              <div class="text-justify"> A printed paper piano. Use your mobile phone to detect your fingers, and play
+                notes! Made for C^3 2021 </div>
+              <div class="text-muted">
+                <a href="https://davidfegyver.github.io/papirzongora/" target="_blank">Try it out!</a> /
+                <a href="https://www.youtube.com/watch?v=WD0ILQ3XkU8" target="_blank">Demo video</a> /
+                #OpenCV #FullPage.js #static #machineVision </div>
+            </li>
+            <li class="mb-5">
               <h3 class="mb-0">Catmash</h3>
               <div class="text-justify"> A little remake of Mark Zuckerbergs Facemash backend :P</div>
               <div class="text-muted"><a href="https://github.com/davidfegyver/Catmash" target="_blank">Source</a> /
                 #facemash #nodejs #sqlite #facebook</div>
+            </li>
+            <li class="mb-5">
+              <h3 class="mb-0">EatSafe - for dogs</h3>
+              <div class="text-justify"> A web page to search for foods, and see if it would harm your dog. </div>
+              <div class="text-muted"> Not yet open source /
+                #javascript #static #css #website </div>
+            </li>
+            <li class="mb-5">
+              <h3 class="mb-0">Chalkbot</h3>
+              <div class="text-justify"> A Discord bot, for the hungarian school management system, Kréta </div>
+              <div class="text-muted"> Not yet open source /
+                <a href="https://www.youtube.com/watch?v=aD9pGGl2AY8" target="_blank">Demo video</a> /
+                #javascript #Discord #E-Kréta #Covid </div>
             </li>
             <li class="mb-5">
               <h3 class="mb-0">Pgoegghatcher</h3>
@@ -160,6 +183,44 @@
       </div>
     </div>
 
+  </section>
+  <section class="cv" style="display: none">
+    <div class="container">
+      <div class="my-5 border-bottom">
+        <h1>Experiences</h1>
+      </div>
+      <ul>
+        <li><strong>2021. 02. - now:</strong> <a href="https://hackerone.com/davidfegyver" target="_blank">Bug bounty
+            hunting on HackerOne - 47/37 triaged</a>
+        </li>
+        <li><strong>2021. 01. - now: </strong><a href="https://picnode.hu" target="_blank">Picnode</a> API+Discord bot
+          dev, next to a bunch of smart teenagers :)
+        </li>
+        <li><strong>2020. 07. </strong>Discord bot dev at JARVIS (Discontinued project)</li>
+      </ul>
+    </div>
+  </section>
+  <section class="cv" style="display: none">
+    <div class="container">
+      <div class="my-5 border-bottom">
+        <h1>Educations</h1>
+      </div>
+      <ul>
+        <li><a href="https://huszargaliskola.hu" target="_blank">Huszár Gál High School, Debrecen</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="cv" style="display: none">
+    <div class="container">
+      <div class="my-5 border-bottom">
+        <h1>Certificates</h1>
+      </div>
+      <ul>
+        <li>DEXAM B2 English exam - 2021. 10.
+        </li>
+      </ul>
+    </div>
   </section>
   <section>
     <div class="container">
@@ -284,7 +345,6 @@
         </div>
       </div>
     </div>
-    </div>
 
   </section>
   <footer>
@@ -301,6 +361,7 @@
   <script src="./spinner.js"></script>
   <script src="./webhook.js"></script>
   <script src="./nowPlaying.js"></script>
+  <script src="./cvMode.js"></script>
 </body>
 
 </html>
