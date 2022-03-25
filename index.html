@@ -35,7 +35,7 @@
   <meta content="http://davidfegyver.github.io" property="og:url">
   <meta content="#8080ff" data-react-helmet="true" name="theme-color">
 
-  <link href="./style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
   </link>
 </head>
 
@@ -57,7 +57,7 @@
     <div class="container">
       <div class="row d-flex">
         <div class="col-md-6">
-          <img src="./me.jpg" class="img-fluid mb-5" id="me"></img>
+          <img src="./images/me.jpg" class="img-fluid mb-5" id="me"></img>
           <button type="button" class="btn btn-secondary mb-3" onclick="toggleCVMode()">Toggle CV Mode</button>
           <p class="cv" style="display: none">Now you can see the "Experiences", "Certificates" and "Educations" tab</p>
         </div>
@@ -153,13 +153,12 @@
       <ul>
 
         <li><strong>2021. 02. - now:</strong> Bug bounty
-          hunting on <a href="https://hackerone.com/davidfegyver" target="_blank">HackerOne</a> - 37 of 47 reports
-          triaged
-        </li>
-        <li><strong>2021. 01. - now: </strong><a href="https://picnode.hu" target="_blank">Picnode</a> - API+Discord bot
-          dev, next to a bunch of smart teenagers :)
+          hunting at <a href="https://hackerone.com/davidfegyver" target="_blank">HackerOne</a> - 52/61 reports accepted
         </li>
         <li><strong>2019 - now: </strong> RetroPC - Testing old PC hardwares, and doing basic repairs
+        </li>
+        <li><strong>2021. 01. - 2022. 03.: </strong><a href="https://plave.hu/" target="_blank">Plave</a> - API+Discord bot
+          dev, next to a bunch of smart teenagers :)
         </li>
         <li><strong>2020. 07. </strong>Discord bot dev at JARVIS (Discontinued project)</li>
       </ul>
@@ -193,37 +192,36 @@
       <div class="my-5 border-bottom">
         <h1>Achievements</h1>
       </div>
-      <h5>Competitions</h5>
       <div class="row">
-        <img style="margin: 5px" src="./epam.svg" height="40" width="80">
+        <img style="margin: 5px" src="./images/epam.svg" height="40" width="80">
         <div>
           <p class="text-white m-0">Coolest Projects Hungary</p>
           <small class="text-muted">Epam Hungary, Category & Absolute favourite - 2021</small>
         </div>
       </div>
       <div class="row">
-        <img style="margin: 5px; color:#fff" src="./h1.svg" height="40" width="40">
+        <img style="margin: 5px; color:#fff" src="./images/h1.svg" height="40" width="40">
         <div>
           <p class="text-white m-0">Bug bounty</p>
           <small class="text-muted">Reached 1000$ payouts on HackerOne! - 2021.08.</small>
         </div>
       </div>
       <div class="row">
-        <img style="margin: 5px" src="./fb.svg" height="40" width="40">
+        <img style="margin: 5px" src="./images/fb.svg" height="40" width="40">
         <div>
           <p class="text-white m-0">Bug bounty</p>
           <small class="text-muted">Reported a valid vulnerability to Facebook! - 2021.02.</small>
         </div>
       </div>
       <div class="row">
-        <img style="margin: 5px" src="./epam.svg" height="40" width="80">
+        <img style="margin: 5px" src="./images/epam.svg" height="40" width="80">
         <div>
           <p class="text-white m-0">CSR HU: III. ScratchONline</p>
           <small class="text-muted">Epam Hungary, V. prize - 2020</small>
         </div>
       </div>
       <div class="row">
-        <img style="margin: 5px" src="./c3.svg" height="40" width="40">
+        <img style="margin: 5px" src="./images/c3.svg" height="40" width="40">
         <div>
           <p class="text-white m-0">&lt19 Freestyle Computer Contest</p>
           <small class="text-muted">C3 Foundation (2020), one from 13 winners</small>
@@ -292,14 +290,6 @@
               <div class="text-justify"> A copy of Mark Zuckerbergs Facemash :P</div>
               <div class="text-muted"><a href="https://github.com/davidfegyver/Catmash" target="_blank">Source</a> /
                 #facemash #nodejs #sqlite #facebook</div>
-            </li>
-
-            <li class="mb-5">
-              <h3 class="mb-0">Pgoegghatcher</h3>
-              <div class="text-justify"> The PGoEggHatcher is a bot that hatches eggs continuously in Pokemon Go, using
-                defit</div>
-              <div class="text-muted"><a href="https://github.com/davidfegyver/Defit-PgoEggHatcher"
-                  target="_blank">Source</a> / #python #pokemon #hack </div>
             </li>
           </ul>
         </div>
@@ -370,11 +360,10 @@
     </div>
   </footer>
 
-
-  <script src="./spinner.js"></script>
-  <script src="./webhook.js"></script>
-  <script src="./nowPlaying.js"></script>
-  <script src="./cvMode.js"></script>
+  <script src="./js/spinner.js"></script>
+  <script src="./js/webhook.js"></script>
+  <script src="./js/nowPlaying.js"></script>
+  <script src="./js/cvMode.js"></script>
 </body>
 
 </html>
