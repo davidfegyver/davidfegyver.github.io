@@ -4,7 +4,7 @@ document.getElementById("send").onclick = (e) => {
   //Please don't hack me :)
 
   fetch(
-    atob('aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvOTU2OTc2MDY3MzAwNzAwMjUwL1hrcnRnMkxTYmxFNWo0a3RRNHVudXFkdF8wVXZNY3RLYVQwQmd1U184ZTR1eUYzazJwQ2lDRmlScHZ0WW5zR2JSY2pp'),
+    atob('aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvOTc0NzI5OTU3OTY2MjM3NzM2LzZ4VGdNV18wNFItUXpKRXlKQ1hERF9ZYndadEI3bW43OHBTTnZ4dVJiTUx4QUloVDFvU2NRMkR4cXM5N2MzUm5KOWhO'),
     {
       method: "POST",
       headers: {
