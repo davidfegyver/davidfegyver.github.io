@@ -2,7 +2,7 @@ document.getElementById("send").onclick = (e) => {
   const message = document.getElementById("message").value;
   const email = document.getElementById("email").value;
 
-  fetch("http://davidf.tk:3000/contact", {
+  fetch("https://davidf.tk:3000/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
