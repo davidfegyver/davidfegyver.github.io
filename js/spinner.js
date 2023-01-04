@@ -1,17 +1,18 @@
-console.log("Dear reader");
-console.log("This site is open-source!");
+console.log("Dear reader!");
+console.log("This site is open-source :)");
 console.log(
   "You can find it here: https://github.com/davidfegyver/davidfegyver.github.io"
 );
 console.log("Please give me a star if you like it :D ");
+
 const spinner = document.getElementById("data-spinner");
 const datalist = [
   "Programmer",
   "Backend dev",
   "BountyHunter",
   "I <3 JS",
-  "Pokemon Go player",
-  "C^3 winner",
+  "Pokemon Go trainer",
+  "Startupper :)"
 ];
 headeranim(datalist, spinner);
 
