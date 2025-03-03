@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: " en" }}">
+{%- include head.html -%}
+
+<body>
+  {%- if site.webneko_enabled -%}
+  <script src="https://webneko.net/n20171213.js"></script>
+  <script>
+    window.NekoType = "{{site.webneko}}";
+
+    window.onload = () => {
+      let h = document.querySelector("h1");
+      let rect = h.getBoundingClientRect();
+
+      new Neko(rect.right, rect.top + 8, false);
+
+
+      navigator.userAgentData.mobile || setTimeout(() => {
+
+        aNekos[0].active = true;
+      }, 2000)
+    }
+
+  </script>
+  {%- endif -%}
+
+  <div class="container">
+    {%- include nav.html -%}
+ 
+    <div class="main">
+      {{ content }}
+    </div>
+
+    {%- include footer.html -%}
+  </div>
+</body>
+
+</html>

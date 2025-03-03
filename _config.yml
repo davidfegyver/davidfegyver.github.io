@@ -1,0 +1,51 @@
+title: paw
+description: "It's me, hi! I'm David"
+url: https://davidfegyver.hu
+favicon: logo.png
+
+webneko_enabled: true
+webneko: lucy
+
+appearance: dark
+
+webmaster_verifications:
+  google: QlpgsFeXJ92YJisKlt_pTwRiaBrcocunPdk80kB8DC8
+
+social:
+  links:
+    - https://linkedin.com/in/davidfegyver
+    - https://github.com/davidfegyver
+    - https://instagram.com/davidfegyver
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji
+
+whitelist:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji
+
+include:
+  - _pages
+  - _posts
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+
+collections:
+  posts:
+    output: true 
+    permalink: /blog/:year/:month/:title/
