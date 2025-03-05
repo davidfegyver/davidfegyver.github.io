@@ -19,7 +19,7 @@
       new Neko(rect.right, rect.top + 8, false);
 
 
-      navigator.userAgentData.mobile || setTimeout(() => {
+      navigator?.userAgentData?.mobile || setTimeout(() => {
 
         aNekos[0].active = true;
       }, 2000)
