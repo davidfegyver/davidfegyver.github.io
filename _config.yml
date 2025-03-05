@@ -11,11 +11,10 @@ appearance: dark
 webmaster_verifications:
   google: QlpgsFeXJ92YJisKlt_pTwRiaBrcocunPdk80kB8DC8
 
-social:
-  links:
-    - https://linkedin.com/in/davidfegyver
-    - https://github.com/davidfegyver
-    - https://instagram.com/davidfegyver
+socials:
+  - https://linkedin.com/in/davidfegyver
+  - https://github.com/davidfegyver
+  - https://instagram.com/davidfegyver
 
 plugins:
   - jekyll-feed
