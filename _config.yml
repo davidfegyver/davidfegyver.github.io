@@ -3,10 +3,8 @@ description: "It's me, hi! I'm David"
 url: https://davidfegyver.hu
 favicon: logo.png
 
-webneko_enabled: true
 webneko: lucy
-
-appearance: dark
+goat_counter: davidfegyver
 
 webmaster_verifications:
   google: QlpgsFeXJ92YJisKlt_pTwRiaBrcocunPdk80kB8DC8
@@ -48,3 +46,5 @@ collections:
   posts:
     output: true 
     permalink: /blog/:year/:month/:title/
+
+birthdate: 2006-08-02

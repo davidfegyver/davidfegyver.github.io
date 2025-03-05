@@ -3,7 +3,10 @@
 {%- include head.html -%}
 
 <body>
-  {%- if site.webneko_enabled -%}
+  {%-if site.goat_counter and jekyll.environment == "production"-%}
+    {%-include goat_counter.html-%}
+  {%-endif-%}
+  {%- if site.webneko -%}
   <script src="https://webneko.net/n20171213.js"></script>
   <script>
     window.NekoType = "{{site.webneko}}";
