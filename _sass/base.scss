@@ -105,10 +105,29 @@ a{
 
 .nav{
   display: flex;
-  justify-content: right;
+  justify-content: center;
   margin: 1rem 0;
 
   a {
     margin: 0 0.5rem;
   }
+}
+
+.listitem_post {
+  border-bottom: thin solid #f8f8f0;
+  margin-bottom: 16px
+}
+
+.listitem_post_title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.listitem_post_description {
+  margin: 8px 0px
+}
+
+.listitem_post_date {
+  font-size: 0.875em;
+  margin: 10px 0px
 }

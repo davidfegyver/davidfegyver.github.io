@@ -4,18 +4,17 @@ title: "daviiid's blog"
 permalink: /blog/
 ---
 
-# Blogposts
+<h1>Blogposts</h1>
 
 {% for post in site.posts %}
 
-## [{{post.title}}]({{site.baseurl}}{{post.url}})
+<div class="listitem_post">
 
-{{post.description}} 
+<a href="{{site.baseurl}}{{post.url}}" class="listitem_post_title">{{post.title}}</a>
 
-<small>
-    <b>{{post.date | date_to_string}}</b>
-    {% for tag in post.tags %}, {{tag}} {% endfor %} 
-</small>
+<p class="listitem_post_description">{{post.description}}</p>
 
+<p class="listitem_post_date">{{post.date | date: "%-d %B %Y" }}</p>
 
+</div>
 {% endfor %}
