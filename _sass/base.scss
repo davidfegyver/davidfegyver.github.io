@@ -1,7 +1,7 @@
 html,
 body {
   background: #262a33;
-  color: #f8f8f0;
+  color: #D5CED9;
 }
 
 html {
@@ -32,8 +32,14 @@ p {
 
 li {
   margin: 0.4rem 0;
+  
 }
 
+li::marker {
+  content: "- ";
+  color: #FFE66D;
+  font-size: 1.2em;
+}
 .container {
   max-width: 480px;
   margin: 0 auto;
