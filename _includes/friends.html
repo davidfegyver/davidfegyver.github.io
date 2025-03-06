@@ -1,0 +1,5 @@
+<h2>Friends</h2>
+
+{% for friend in site.friends %}
+    <a href="{{friend.url}}" target="_blank">[{{friend.name}}]</a>
+{% endfor %}

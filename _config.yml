@@ -54,3 +54,9 @@ collections:
     permalink: /blog/:year/:month/:title/
 
 birthdate: 2006-08-02
+
+friends: 
+  - name: "dcs0"
+    url: "https://dcs0.hu/"
+  - name: "levy"
+    url: "https://leventefazekas.hu/"
