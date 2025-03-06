@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "daviiid's photos"
-permalink: /photography/
+permalink: /photography
 ---
 # Photography 
 

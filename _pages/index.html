@@ -1,0 +1,29 @@
+---
+layout: default
+title: "daviiid's site"
+permalink: /
+---
+{% assign birthdate = site.birthdate | date: '%s' %}
+{% assign nowdate = 'now' | date: '%s' %}
+{% assign diff = nowdate | minus: birthdate %}
+{% assign diffYears = diff | divided_by: 3600 | divided_by: 24 | divided_by: 365 %}
+
+<h1>hi, i'm david</h1> 
+
+<p>im a {{ diffYears | round: 0 }}yo student from hungary.</p>
+
+<p>im interested in web, android app and hardware development, while also trying to break these in every way possible.</p>
+
+<h2>Projects</h2>
+<p>sometimes i code and publish cool projects to my <a href="https://github.com/davidfegyver">[github]</a></p>
+
+<div id="playing">
+</div>
+
+{%- include friends.html -%}
+
+<script>
+    const last_fm_user = "{{site.last_fm_user}}"
+    const last_fm_api_key = "{{site.last_fm_api_key}}"
+</script>
+<script src="/assets/js/now-playing.js"></script>
