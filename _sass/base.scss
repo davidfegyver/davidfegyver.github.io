@@ -21,13 +21,6 @@ body {
 
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 3rem;
-}
 
 hr {
   margin: 2rem 0;
@@ -57,11 +50,11 @@ hr {
   border: 0;
 
   &:before {
-    content: '- - - - - - - - - - - '
+    content: '- - - - - - - '
   }
 
   &:after {
-    content: attr(data-content) ' - - - - - - - - - - -'
+    content: attr(data-content) ' - - - - - - -'
   }
 }
 
