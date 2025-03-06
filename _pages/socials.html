@@ -1,0 +1,18 @@
+---
+layout: default
+title: "daviiid's socials"
+permalink: /socials
+---
+
+<h1>Socials</h1> 
+
+<p>if you'd like to contact me, here are some of my socials:</p>
+
+<ul>
+  {% for social in site.socials %}
+    {% if social.url %}
+      <li><a href="{{ social.url }}" target="_blank">[{{ social.name }}]</a></li>
+    {% else %}
+      <li>{{ social.name }}: {{ social.text }}</li>
+    {% endif %}
+  {% endfor %}
