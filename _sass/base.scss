@@ -6,6 +6,11 @@ body {
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -13,17 +18,31 @@ body {
   font-size: 1em;
   margin: 0;
   overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-
+  line-height: 1.5;
 }
-
 
 hr {
   margin: 2rem 0;
+  text-align: center;
+  border: 0;
+  overflow: visible;
+  height: 1.5em;
+}
+
+hr::before {
+  content: '- - - - - - - ';
+}
+
+hr::after {
+  content: attr(data-content) ' - - - - - - -';
 }
 
 p {
@@ -32,7 +51,6 @@ p {
 
 li {
   margin: 0.4rem 0;
-  
 }
 
 li::marker {
@@ -40,32 +58,28 @@ li::marker {
   color: #FFE66D;
   font-size: 1.2em;
 }
+
 .container {
-  max-width: 480px;
+  width: 100%;
+  max-width: 680px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
-
   flex: 1;
-
   display: flex;
   flex-direction: column;
 }
 
-hr {
-  text-align: center;
-  border: 0;
-
-  &:before {
-    content: '- - - - - - - '
-  }
-
-  &:after {
-    content: attr(data-content) ' - - - - - - -'
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
   }
 }
 
 table {
   width: 100%;
+  margin: 1rem 0;
+  overflow-x: auto;
+  display: block;
 }
 
 table,
@@ -80,53 +94,63 @@ blockquote {
   font-style: italic;
   border: thin solid #f8f8f0;
   padding: 1rem;
+  margin: 1rem 0;
+}
 
-  p {
-    margin: 0;
-  }
+blockquote p {
+  margin: 0;
 }
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
   margin: 0 auto;
 }
 
-a{
+a {
   color: #05bc79;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .footer {
   text-align: center;
   margin-top: auto;
+  padding: 1rem 0;
 }
 
-.nav{
+.nav {
   display: flex;
   justify-content: center;
   margin: 1rem 0;
+  flex-wrap: wrap;
+}
 
-  a {
-    margin: 0 0.5rem;
-  }
+.nav a {
+  margin: 0.5rem;
 }
 
 .listitem_post {
   border-bottom: thin solid #f8f8f0;
-  margin-bottom: 16px
+  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .listitem_post_title {
   font-size: 1.5em;
   font-weight: bold;
+  word-wrap: break-word;
 }
 
 .listitem_post_description {
-  margin: 8px 0px
+  margin: 8px 0px;
 }
 
 .listitem_post_date {
   font-size: 0.875em;
-  margin: 10px 0px
+  margin: 10px 0px;
 }
