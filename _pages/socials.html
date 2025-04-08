@@ -13,6 +13,6 @@ permalink: /socials
     {% if social.url %}
       <li><a href="{{ social.url }}" target="_blank">[{{ social.name }}]</a></li>
     {% else %}
-      <li>{{ social.name }}: {{ social.text }}</li>
+      <li>{% if social.name %}{{ social.name }}:{% endif %} {{ social.text }}</li>
     {% endif %}
   {% endfor %}

@@ -13,12 +13,13 @@ webmaster_verifications:
   google: QlpgsFeXJ92YJisKlt_pTwRiaBrcocunPdk80kB8DC8
 
 socials:
-  - name: "discord"
-    text: "@pawfessional"
   - name: "instagram"
     url: https://instagram.com/davidfegyver
   - name: "github"
     url: "https://github.com/davidfegyver"
+  - name: "discord"
+    text: "@pawfessional"
+  - text: "root@davidfegyver.hu"
 
 plugins:
   - jekyll-feed
